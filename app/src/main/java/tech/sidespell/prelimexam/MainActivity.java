@@ -5,8 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ToggleButton start;
+    private Button increment;
+    private Button decrement;
+    private SeekBar seek;
+    private TextView timer;
+
+
+    @Override
+    public View findViewById(int id) {
+        return super.findViewById(id);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
     }
 
     @Override
@@ -38,4 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    //NOTHING,, Help me Sir!.. ;) , ,
 }
